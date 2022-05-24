@@ -56,7 +56,6 @@ body {
   cursor: default;
 }
 
-
 .btns:hover {
   background-color: var(--primaryHover);
 }
