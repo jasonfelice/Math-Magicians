@@ -9,7 +9,7 @@ export default class Calculator extends Component {
   render() {
     return (
       <div className="calculator">
-        <div className="output" />
+        <div className="output"> 0 </div>
         <div className="btns func"> AC </div>
         <div className="btns func"> +/- </div>
         <div className="btns func"> % </div>
@@ -17,7 +17,7 @@ export default class Calculator extends Component {
         <div className="btns"> 7 </div>
         <div className="btns"> 8 </div>
         <div className="btns"> 9 </div>
-        <div className="btns"> X </div>
+        <div className="btns func"> X </div>
         <div className="btns"> 4 </div>
         <div className="btns"> 5 </div>
         <div className="btns"> 6 </div>

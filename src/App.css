@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #282c34;
+  --primaryHover: #272930;
+  --primaryActive: #1f2025;
+  --background: #55585e;
+  --themeColor: #1897b9;
+  --themeHover: #1c8ead;
+  --themeActive: #197d99;
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -14,29 +24,58 @@ body {
 }
 
 .calculator {
-  border: 2px solid blue;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
   height: 500px;
   width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1px;
+  box-shadow: 0 0 20px #aaa;
 }
 
 .output {
   grid-column: 1 / -1;
+  padding: 10px 5px;
+  height: 100%;
   direction: rtl;
-  padding: 5px;
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .btns {
   padding: 5px;
-  border: 2px solid pink;
+  background-color: var(--primary);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.08s ease-in;
+  cursor: default;
+}
+
+
+.btns:hover {
+  background-color: var(--primaryHover);
+}
+
+.btns:active {
+  background-color: var(--primaryActive);
+}
+
+.func {
+  background-color: var(--themeColor);
+  color: #000;
+}
+
+.func:hover {
+  background-color: var(--themeHover);
+}
+
+.func:active {
+  background-color: var(--themeActive);
 }
 
 .btns:nth-child(18) {
