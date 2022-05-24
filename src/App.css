@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+#root {
+  margin: auto;
+}
+
+.calculator {
+  border: 2px solid blue;
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.output {
+  grid-column: 1 / -1;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.btns {
+  padding: 5px;
+  border: 2px solid pink;
+}
