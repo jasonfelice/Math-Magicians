@@ -1,39 +1,82 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: #282c34;
+  --primaryHover: #272930;
+  --primaryActive: #1f2025;
+  --background: #55585e;
+  --themeColor: #1897b9;
+  --themeHover: #1c8ead;
+  --themeActive: #197d99;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  margin: auto;
+}
+
+.calculator {
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  box-shadow: 0 0 20px #aaa;
+}
+
+.output {
+  grid-column: 1 / -1;
+  padding: 10px 5px;
+  height: 100%;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btns {
+  padding: 5px;
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.08s ease-in;
+  cursor: default;
 }
 
-.App-link {
-  color: #61dafb;
+.btns:hover {
+  background-color: var(--primaryHover);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.btns:active {
+  background-color: var(--primaryActive);
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.func {
+  background-color: var(--themeColor);
+  color: #000;
+}
+
+.func:hover {
+  background-color: var(--themeHover);
+}
+
+.func:active {
+  background-color: var(--themeActive);
+}
+
+.btns:nth-child(18) {
+  grid-column: 1 /3;
 }
