@@ -19,17 +19,26 @@ body {
   width: 500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
 }
 
 .output {
   grid-column: 1 / -1;
   direction: rtl;
+  padding: 5px;
   display: flex;
   align-items: center;
-  padding: 5px;
+  font-size: 1.5rem;
 }
 
 .btns {
   padding: 5px;
   border: 2px solid pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns:nth-child(18) {
+  grid-column: 1 /3;
 }
