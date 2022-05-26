@@ -12,32 +12,38 @@ export default class Calculator extends Component {
       next: null,
       operation: null,
     };
+    this.eventHandler = this.eventHandler.bind(this);
+  }
+
+  eventHandler(value) {
+    const { total, next, operation } = this.state;
+    this.setState(calculate({total, next, operation}, value));
   }
 
   render() {
-    const { total } = this.state;
+    const {total, next, operation} = this.state; 
     return (
       <div className="calculator">
-        <div className="output"></div>
-       <Button value="AC" btnClass="btns func" />
-       <Button value="+/-" btnClass="btns func"  />
-       <Button value="%" btnClass="btns func" />
-       <Button value="÷" btnClass="btns func" />
-       <Button value="7" />
-       <Button value="8" />
-       <Button value="9" />
-       <Button value="x" btnClass="btns func" />
-       <Button value="4" />
-       <Button value="5" />
-       <Button value="6" />
-       <Button value="-" btnClass="btns func" />
-       <Button value="1" />
-       <Button value="2" />
-       <Button value="3" />
-       <Button value="+" btnClass="btns func" />
-       <Button value="0" />
-       <Button value="." />
-       <Button value="=" btnClass="btns func" />
+        <div className="output">{total || next || operation}</div>
+       <Button handler={this.eventHandler} value="AC" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="+/-" btnClass="btns func"  />
+       <Button handler={this.eventHandler} value="%" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="÷" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="7" />
+       <Button handler={this.eventHandler} value="8" />
+       <Button handler={this.eventHandler} value="9" />
+       <Button handler={this.eventHandler} value="x" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="4" />
+       <Button handler={this.eventHandler} value="5" />
+       <Button handler={this.eventHandler} value="6" />
+       <Button handler={this.eventHandler} value="-" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="1" />
+       <Button handler={this.eventHandler} value="2" />
+       <Button handler={this.eventHandler} value="3" />
+       <Button handler={this.eventHandler} value="+" btnClass="btns func" />
+       <Button handler={this.eventHandler} value="0" />
+       <Button handler={this.eventHandler} value="." />
+       <Button handler={this.eventHandler} value="=" btnClass="btns func" />
       </div>
     );
   }

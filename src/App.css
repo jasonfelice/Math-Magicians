@@ -46,6 +46,7 @@ body {
 }
 
 .btns {
+  border: none;
   padding: 5px;
   background-color: var(--primary);
   color: #fff;

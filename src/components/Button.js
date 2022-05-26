@@ -8,9 +8,9 @@ export default class Button extends Component {
   }
 
   render() {
-    const { value, btnClass } = this.props;
+    const { handler, value, btnClass } = this.props;
     return (
-      <div className={btnClass}>{value}</div>
+      <button type="button" onClick={() => handler(value)} className={btnClass}>{value}</button>
     );
   }
 }
@@ -18,9 +18,11 @@ export default class Button extends Component {
 Button.propTypes = {
   value: PropTypes.string,
   btnClass: PropTypes.string,
+  handler: PropTypes.func,
 };
 
 Button.defaultProps = {
   value: '0',
   btnClass: 'btns',
+  handler: null,
 };
