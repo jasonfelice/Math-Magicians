@@ -49,6 +49,7 @@ body {
   padding: 5px;
   background-color: var(--primary);
   color: #fff;
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
