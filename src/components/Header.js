@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './Header.module.css';
 
 const Header = () => {
   const links = [
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <header>
       <a href="/#"><h1>Math Magicians</h1></a>
-      <nav className="navBar">
+      <nav className={styles.navBar}>
         <ul>
           {links.map((link) => (
             <li key={link.id}>
