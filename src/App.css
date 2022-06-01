@@ -101,3 +101,16 @@ section h2 {
   display: flex;
   justify-content: space-around;
 }
+
+/* Quote */
+
+.quote {
+  display: flex;
+  height: 50vh;
+}
+
+.quote-wrapper {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: auto;
+}
