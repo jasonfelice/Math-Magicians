@@ -5,13 +5,13 @@ header {
   padding: 20px 50px;
 }
 
+a {
+  text-decoration: none;
+}
+
 header > a {
   color: black;
   font-size: 1.5rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 .navBar ul {
