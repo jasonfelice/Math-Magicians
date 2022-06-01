@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header > a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navBar li {
+  padding: 5px;
+}
+
+.navBar a {
+  color: cadetblue;
+}
