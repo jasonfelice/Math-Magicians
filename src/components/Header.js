@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const links = [
@@ -22,14 +22,14 @@ const Header = () => {
 
   return (
     <header>
-      <a href="../index.html"><h1>Math Magicians</h1></a>
+      <a href="/#"><h1>Math Magicians</h1></a>
       <nav className="navBar">
         <ul>
           {links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>
+              <Link to={link.path}>
                 {link.name}
-              </NavLink>
+              </Link>
             </li>
           ))}
         </ul>
