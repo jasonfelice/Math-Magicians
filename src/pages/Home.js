@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Header />
       <section className="home">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <div className="home-wrapper">
           <p>{des}</p>
           <p>{des2}</p>

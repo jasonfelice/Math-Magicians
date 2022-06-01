@@ -76,7 +76,11 @@
 
 /* Home Page */
 
-section h1 {
+section {
+  padding: 2rem;
+}
+
+section h2 {
   text-align: center;
   margin: 2rem 0;
   font-size: 2rem;
@@ -89,4 +93,11 @@ section h1 {
   flex-flow: column nowrap;
   gap: 1rem;
   font-size: 1.5rem;
+}
+
+/* Calculator Page */
+
+.app {
+  display: flex;
+  justify-content: space-around;
 }

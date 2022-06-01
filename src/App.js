@@ -1,5 +1,4 @@
 import React from 'react';
-// import Calculator from './components/Calculator';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,11 +6,13 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from './pages/Home';
+import Calculator from './pages/Calculator';
 
 const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/calculator" element={<Calculator />} />
     </Routes>
   </Router>
 );
