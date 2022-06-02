@@ -1,5 +1,7 @@
 # Project - React App
-
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+- Make simple calculations.
+- Read a random math-related quote.
 ## Built With
 
 - HTML
@@ -8,22 +10,19 @@
 - webpack
 - React
 
-## Live Demo (not available)
-[Live Demo Link](#)
+## Live Demo
+- [Heroku](https://infinite-ocean-67742.herokuapp.com/)
+- [Netlify](https://6298a4dcc09865071e22857b--luxury-salmiakki-c12cfc.netlify.app/)
 
 ## Install
 
-Download all dependencies after cloning this repository. Run:
-```
-npm install
-```
-Run `npm start` to start live server.
-
 To get a local copy up and running follow these simple example steps.
-- Copy this [link](https://github.com/jasonfelice/Math-Magicians)
+- Copy this link
+  ```
+  https://github.com/jasonfelice/Math-Magicians
 - Open the terminal
 - Run "git clone" and paste the link
-- Install dependencies 
+- Install dependencies using `npm install` and start live server `npm start`
 - Open this folder in your code editor
 - Create a feature branch to work on
 - Now you can edit and make a pull request
