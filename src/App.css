@@ -16,6 +16,8 @@
 
 body {
   background-color: var(--background);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e0e6e7;
 }
 
 .calculator {
@@ -104,7 +106,9 @@ section h2 {
 
 .app {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 /* Quote */
