@@ -17,7 +17,13 @@ const Calculator = () => {
   const { total, next, operation } = result;
   return (
     <div className="calculator">
-      <div className="output">{total || next || operation}</div>
+      <div className="output">
+        { next }
+        {' '}
+        { operation }
+        {' '}
+        { total }
+      </div>
       <Button handler={eventHandler} value="AC" btnClass="btns func" />
       <Button handler={eventHandler} value="+/-" btnClass="btns func" />
       <Button handler={eventHandler} value="%" btnClass="btns func" />
