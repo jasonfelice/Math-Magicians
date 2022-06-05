@@ -12,7 +12,7 @@
 
 ## Live Demo
 - [Heroku](https://infinite-ocean-67742.herokuapp.com/)
-- [Netlify](https://6298a4dcc09865071e22857b--luxury-salmiakki-c12cfc.netlify.app/)
+- [Netlify](https://luxury-salmiakki-c12cfc.netlify.app/)
 
 ## Install
 
