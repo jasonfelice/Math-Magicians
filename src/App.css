@@ -8,21 +8,25 @@
   --primary: #282c34;
   --primaryHover: #272930;
   --primaryActive: #1f2025;
-  --background: #55585e;
+  --background: #303233;
   --themeColor: #1897b9;
   --themeHover: #1c8ead;
   --themeActive: #197d99;
+}
+
+body {
+  background-color: var(--background);
 }
 
 .calculator {
   background-color: var(--background);
   border: 2px solid var(--primary);
   height: 500px;
-  width: 500px;
+  width: 40%;
+  min-width: 300px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1px;
-  box-shadow: 0 0 20px #aaa;
+  grid-gap: 5px;
 }
 
 .output {
@@ -37,7 +41,8 @@
 }
 
 .btns {
-  border: none;
+  border: 1px solid var(--primaryActive);
+  border-radius: 5px;
   padding: 5px;
   background-color: var(--primary);
   color: #fff;
