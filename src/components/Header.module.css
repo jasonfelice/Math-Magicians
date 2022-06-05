@@ -1,4 +1,14 @@
+:root {
+  --primaryH: #222222;
+  --primary_nav: #292727;
+  --secondaryH: #58bfdc;
+  --secPriH: #45a8c4;
+  --secDarkH: #396672;
+  --transition: all 0.2s ease-in;
+}
+
 header {
+  background-color: var(--primaryH);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,9 +19,10 @@ a {
   text-decoration: none;
 }
 
-header > a {
-  color: black;
-  font-size: 1.5rem;
+header > a,
+h1 {
+  color: var(--secondaryH);
+  font-size: 2.8rem;
 }
 
 .navBar ul {
@@ -21,9 +32,21 @@ header > a {
 }
 
 .navBar li {
-  padding: 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary_nav);
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.navBar li:hover {
+  background-color: var(--primaryH);
 }
 
 .navBar a {
-  color: cadetblue;
+  color: var(--secPriH);
+  transition: var(--transition);
+}
+
+.navBar a:hover {
+  color: var(--secDarkH);
 }
