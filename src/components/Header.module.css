@@ -10,9 +10,11 @@
 header {
   background-color: var(--primaryH);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px 50px;
+  gap: 25%;
 }
 
 a {
