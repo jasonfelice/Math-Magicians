@@ -1,7 +1,7 @@
 # Project - React App
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-- Make simple calculations.
-- Read a random math-related quote.
+> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+> - Make simple calculations.
+> - Read a random math-related quote.
 ## Built With
 
 - HTML
@@ -29,10 +29,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Jake Felice**
 
 - GitHub: [@jasonfelice](https://github.com/jasonfelice)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jason-felice-11a5a622b/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jake-felice/)
+- Twitter: [@jasonfelice0](https://twitter.com/jasonfelice0)
 
 ## 🤝 Contributing
 
